@@ -8,7 +8,7 @@ const Home = () => {
   const fetchStudents = async () => {
     try {
       // Add /students to the endpoint
-      const response = await fetch('http://localhost:5000/students');
+      const response = await fetch('https://prachibackend.onrender.com/students');
       const data = await response.json();
       setStudents(data);
     } catch (err) {
