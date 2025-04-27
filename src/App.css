@@ -132,13 +132,13 @@ td {
 /* Action buttons */
 .button {
   display: inline-block;
-  margin: 0 5px;
-  padding: 10px 15px;
+  margin: 0 10px;
+  padding: 12px 20px;
   font-weight: bold;
   border: none;
-  border-radius: 8px;
+  border-radius: 50%; /* Make the buttons round */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .edit-button {
@@ -148,6 +148,7 @@ td {
 
 .edit-button:hover {
   background-color: #ff4d88;
+  transform: scale(1.1); /* Slight grow effect */
 }
 
 .delete-button {
@@ -157,6 +158,16 @@ td {
 
 .delete-button:hover {
   background-color: #e6005c;
+  transform: scale(1.1); /* Slight grow effect */
+}
+
+/* Info Card styling */
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 8px 15px rgba(255, 182, 193, 0.4);
 }
 
 /* Logo spin animation */
